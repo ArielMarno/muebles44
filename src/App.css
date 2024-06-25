@@ -1,4 +1,21 @@
 :root {
-  background: #000;
-  color: #fff;
+
+  /*FUENTES*/
+  --font-title: "Roboto Condensed", sans-serif;
+  --font-text: "Montserrat", sans-serif;
+
+  /*COLORES*/
+  --color-blanco: #E5EAEF;
+  --color-gris: #B4B7BB;
+  --color-vio-claro:#B7A5BE;
+  --color-vio: #775384;
+  --color-verde: #768C60;
+  --color-negro: #232323;
 }
+
+.body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,251 @@
+/*contenedor principal*/
+.testimonios{
+  width: 100%;
+  min-height: 70svh;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  gap: 3rem;
+}
+
+/*contenedor titulo, subtitulo y botón*/
+.testimonios_title{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*titulo y sub*/
+.testimonios_title-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: var(--color-negro);
+}
+
+/*subtitulo*/
+.testimonios_title-content h4{
+  font-family: var(--font-text);
+  color: var(--color-vio);
+  font-size: clamp(1.3rem, 1.0906rem + 0.3275vw, 1.5rem);
+  font-weight: 600;
+}
+
+/*titulo*/
+.testimonios_title-content h2{
+  font-family: var(--font-title);
+  font-size: clamp(3rem, 1.9529rem + 1.6377vw, 4rem);
+  margin: 0.5rem 0;
+  margin-top: 0;
+}
+
+/*botón*/
+.testimonios_title a{
+  font-family: var(--font-text);
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.cssbuttons-io-button{
+  background: var(--color-vio);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+  
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+  
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+  
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+  
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+  
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+/*contenedor de tarjetas*/
+.card_contenedor{
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/*tarjetas*/
+.testimonios .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 25px;
+  border: 1px solid var(--color-gris);
+  padding: 1.5rem;
+}
+
+.person{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*avatar y nombre*/
+.perfil{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+/*avatar*/
+.perfil img{
+  width: 40px;
+  height: auto;
+}
+
+/*nombre*/
+.perfil h5{
+  font-family: var(--font-title);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/*contenedor de estrellas*/
+.stars{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/*estrellas*/
+.stars img{
+  width: 30px;
+  height: auto;
+}
+
+/*texto*/
+.card .person p{
+  font-family: var(--font-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  max-width: 500px;
+}
+
+
+
+/*diseño adaptable*/
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+  .testimonios_title{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /*botón*/
+  .testimonios_title a{
+    font-size: 1.1rem;
+  }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+  .testimonios{
+    padding: 3rem 1rem;
+  }
+
+  /*subtitulo*/
+  .testimonios_title-content h4{
+    font-size: clamp(1.1rem, 0.7667rem + 1.1111vw, 1.3rem);
+  }
+
+  /*titulo*/
+  .testimonios_title-content h2{
+    font-size: clamp(2rem, 1.1667rem + 2.7778vw, 2.5rem);
+  }
+
+  /*botón*/
+  .testimonios_title a{
+    font-size: 1rem;
+  }
+
+  /*texto*/
+  .card .person p{
+    font-size: 1.1rem;
+  }
+
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+  
+  .perfil h5{
+    font-size: 1.3rem;
+  }
+
+  .perfil img{
+    width: 30px;
+    height: auto;
+  }
+
+  .stars img{
+    width: 25px;
+  }
+
+  /*texto*/
+  .card .person p{
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}

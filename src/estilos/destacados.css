@@ -1,0 +1,179 @@
+/*contenedor principal*/
+.destacados{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    min-height: 100svh;
+    width: 100%;
+    background: var(--color-blanco);
+    padding: 5rem 2rem;
+    gap: 3rem;
+}
+
+/*contenedor titulo, subtitulo, texto y boton*/
+.destacados_contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--color-negro);
+}
+
+.destacados_contenido h4{
+    font-family: var(--font-text);
+    color: var(--color-vio);
+    font-size: clamp(1.3rem, 1.0906rem + 0.3275vw, 1.5rem);
+    font-weight: 600;
+}
+
+.destacados_contenido h2{
+    font-family: var(--font-title);
+    font-size: clamp(3rem, 1.9529rem + 1.6377vw, 4rem);
+    margin: 0.5rem 0;
+    margin-top: 0;
+}
+
+.destacados_contenido p{
+    max-width: 90%;
+    font-family: var(--font-text);
+    font-size: clamp(1.3rem, 1.0906rem + 0.3275vw, 1.5rem);
+}
+
+.destacados_contenido a{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+/*boton*/
+.cssbuttons-io-button {
+    background: var(--color-vio);
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+
+  .carusel div{
+    max-width: 600px;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .legend{
+    font-family: var(--font-text);
+    font-weight: 600;
+    font-size: 1.3rem !important;
+    background: rgb(119, 83, 132) !important;
+  }
+
+  .carousel-status, .control-dots, .thumbs {
+    display: none;
+  }
+
+
+
+/*diseño adaptable*/
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+   .destacados{
+    grid-template-columns: 1fr;
+   }
+
+   .destacados_contenido a{
+     font-size: 1.1rem;
+   }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+  .destacados{
+    padding: 5rem 1rem;
+  }
+
+  .destacados_contenido h4{
+    font-size: clamp(1.1rem, 0.7667rem + 1.1111vw, 1.3rem);
+  }
+
+  .destacados_contenido h2{
+    font-size: clamp(2.5rem, 1.6667rem + 2.7778vw, 3rem);
+  }
+
+  .destacados_contenido p{
+    max-width: 100%;
+    font-size: clamp(1.1rem, 0.7667rem + 1.1111vw, 1.3rem);
+  } 
+
+  .destacados_contenido a{
+    font-size: 1rem;
+  }
+
+  .legend{
+    font-size: 1.1rem !important;
+  }
+
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+  .destacados_contenido h2{
+    font-size: 2rem;
+  }
+
+  .destacados_contenido p{
+    font-size: 1rem;
+  } 
+}

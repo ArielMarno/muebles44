@@ -1,0 +1,142 @@
+/*contenedor principal*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100svh;
+    background-image: url("/portada1.webp");
+    background-position: center;
+    background-size: cover;
+    gap: 1rem;
+}
+
+/*titulo*/
+.home h1{
+    font-family: var(--font-title);
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--color-negro);
+    max-width: 900px;
+    text-align: center;
+    margin-top: 12rem;
+}
+
+/*contenedor de botones*/
+.home_btn{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*boton*/
+.btn{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.8rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--color-blanco);
+    border-radius: 10px;
+    color: var(--color-blanco);
+    background: var(--color-vio);
+}
+
+.btn:hover{
+    transition: all ease-in-out 300ms;
+    border: 2px solid var(--color-vio);
+    color: var(--color-vio);
+    background: none;
+}
+
+/*boton alternativo*/
+.btn-alt{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-vio);
+    padding: 0.8rem 1rem;
+}
+
+.btn-alt:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-vio-claro);
+}
+
+
+/*diseño adaptable*/
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+     /*contenedor principal*/
+     .home{
+        background-image: url("/portada2.webp");
+        padding: 0 1rem;   
+    }
+
+}
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+    
+    /*contenedor principal*/
+    .home{
+        padding: 0 1rem;   
+    }
+
+    /*titulo*/
+    .home h1{
+        font-size: 4rem;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    /*contenedor principal*/
+    .home{
+        background-image: url("/portada3.webp");
+        padding: 0 1rem;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    /*titulo*/
+    .home h1{
+        font-size: 3.2rem;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .home_btn{
+        gap: 0.5rem;
+        margin-bottom: 15rem;
+    }
+
+    .btn, .btn-alt{
+        font-size: 1.1rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+    .home{
+        min-height: 100svh;
+    }
+
+    /*titulo*/
+    .home h1{
+        font-size: 2.5rem;
+        width: 350px;
+    }
+
+    .home_btn{
+        margin-bottom: 10rem;
+    }
+    /*butón*/
+    .btn, .btn-alt{
+        font-size: 1rem;
+    }
+}
