@@ -1,6 +1,5 @@
 import '../estilos/destacados.css';
-
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 import dest1 from '../assets/destacados/foto1.webp';
@@ -34,7 +33,7 @@ const Destacados = () => {
       </div>
       <Carousel autoPlay infiniteLoop className='carusel'>
         <div>
-          <img src={dest1} />
+          <img src={dest3} />
           <a href="https://www.muebles44.com/varios/organizador-con-3-cajones-varios-colores-or003"><p className="legend">Organizador</p></a>
         </div>
         <div>
@@ -42,8 +41,8 @@ const Destacados = () => {
           <a href="https://www.muebles44.com/vestidores/vestidor-eco-con-estantes-y-perchero-vs001"><p className="legend">Vestidor</p></a>
         </div>
         <div>
-          <img src={dest3} />
-          <a href=""><p className="legend">Mesa Tandil</p></a>
+          <img src={dest1} />
+          <a href="https://www.muebles44.com/varios/bano/repisa-con-toallero-minimalista"><p className="legend">Toallero</p></a>
         </div>
       </Carousel>
     </div>
