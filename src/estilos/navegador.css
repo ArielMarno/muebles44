@@ -6,7 +6,7 @@
 /*contenedor principal*/
 .navbar{
     width: 100%;
-    min-height: 10vh;
+    min-height: 8vh;
     background: var(--color-blanco);
     display: flex;
     flex-direction: row;
@@ -34,7 +34,7 @@ nav{
 /*links*/
 nav a{
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     font-family: var(--font-text);
     color: var(--color-negro);
@@ -111,16 +111,16 @@ nav a:hover{
         position: fixed;
         top: 92px;
         right: 0;
-        background: #fff;
+        background: var(--color-blanco);
     }
 
     .links.active a{
-      color: var(--color-n);
+      color: var(--color-negro);
       padding: 0.7rem 1rem;
     }
 
     .links a:hover {
-       color: var(--color-c);
+       color: var(--color-vio);
     }
       
     .burguer{
@@ -137,6 +137,6 @@ nav a:hover{
     }
 
     .links.active{
-        top: 79px;
+        top: 69px;
     }
 }
