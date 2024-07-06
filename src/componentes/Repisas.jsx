@@ -11,49 +11,49 @@ const Repisas = () => {
   return (
     <div className='contenedor_img'>
       <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/cubos-flotantes-de-12-pulgada-rf007">
+        <a href="https://www.muebles44.com/repisas/cubos-flotantes-de-12-pulgada-3-unidades">
           <figure>
               <img src={uno} alt="repisas" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/especiero-flotante-rf008">
+        <a href="https://www.muebles44.com/repisas/especiero-flotante-con-portarollo">
           <figure>
               <img src={dos} alt="repisa" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/repisa-flotante-ctoallero-y-topes-rf013">
+        <a href="https://www.muebles44.com/repisas/repisa-flotante-ctoallero-y-topes">
           <figure>
               <img src={tres} alt="repisa" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/repisa-flotante-minimalista-rf002">
+        <a href="https://www.muebles44.com/repisas/repisa-flotante-minimalista">
           <figure>
               <img src={cuatro} alt="repisa" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/repisa-flotante-3d-rf023">
+        <a href="https://www.muebles44.com/repisas/repisa-flotante-3d">
           <figure>
               <img src={cinco} alt="repisa" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/repisa-flotante-rf003">
+        <a href="https://www.muebles44.com/repisas/repisa-flotante">
           <figure>
               <img src={seis} alt="repisa" />
             </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/repisas/repisa-flotante-minimalista-rf001">
+        <a href="https://www.muebles44.com/repisas/repisa-flotante-minimalista">
           <figure>
               <img src={siete} alt="repisa" />
             </figure>

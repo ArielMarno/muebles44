@@ -1,10 +1,11 @@
 /*contenedor principal del componente*/
 .contacto{
-    min-height: 60svh;
+    min-height: 90svh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     padding: 5rem 3rem;
+    padding-bottom: 1rem;
     background: var(--color-negro);
 }
 
@@ -160,7 +161,14 @@
     align-items: flex-start;
     gap: 1rem;
 }
+.contacto_content-data p{
+    font-size: 1rem;
+    font-weight: 500;
+}
 
+.contacto_content-data p span{
+    font-weight: 600
+}
 /*contenedor de links a redes*/
 .contacto_content-social{
     display: flex;
@@ -188,7 +196,7 @@
 /*titulo*/
 .contacto_ubi h3{
     font-family: var(--font-title);
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: #fff;
 }
@@ -204,26 +212,27 @@
 /*frame*/
 .map iframe{
     width: 100%;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
     border-radius: 15px;
 }
 
 /*copyright*/
 .copy{
+    height: 5vh;
     margin-top: 5rem;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /*texto*/
 .copy p{
     color: #fff;
     font-family: var(--font-text);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
 
@@ -267,6 +276,7 @@
 
     .contacto{
         padding: 3rem 2rem;
+        padding-bottom: 0.5rem;
     }
 
     .contacto_logo{
@@ -307,6 +317,7 @@
 
     .contacto{
         padding: 3rem 1rem;
+        padding-bottom: 0.5rem;
     }
 
     /*titulo contacto*/

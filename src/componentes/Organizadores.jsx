@@ -11,49 +11,49 @@ const Organizadores = () => {
   return (
     <div className='contenedor_img'>
       <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/organizador-con-estantes-y-2-cajones">
           <figure>
             <img src={uno} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/organizador-tandil-con-estantes-y-cajones">
           <figure>
             <img src={dos} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/organizador-con-cajon-de-madera-y-de-mimbre">
           <figure>
             <img src={tres} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="https://www.muebles44.com/vestidores/vestidor-con-estantes-y-perchero-1-m-vs001">
+        <a href="https://www.muebles44.com/organizadores/vestidores/vestidor-con-estantes-y-perchero">
           <figure>
             <img src={cuatro} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/vestidores/vestidor-nordico">
           <figure>
             <img src={cinco} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/perchero-nordico-grande">
           <figure>
             <img src={seis} alt="organizador" />
           </figure>
         </a>
         </div>
         <div className='box_img'>
-        <a href="">
+        <a href="https://www.muebles44.com/organizadores/organizador-de-8-cajones">
           <figure>
             <img src={siete} alt="organizador" />
           </figure>

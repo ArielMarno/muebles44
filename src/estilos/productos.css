@@ -5,8 +5,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding: 5rem 2rem;
+    gap: 1rem;
+    padding: 7rem 2rem;
     background-color: var(--color-blanco);
 }
 
@@ -37,7 +37,7 @@
 
 .productos_title-nav a{
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
 }
