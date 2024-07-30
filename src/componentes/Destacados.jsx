@@ -13,7 +13,7 @@ const Destacados = () => {
           <h4>Novedades</h4>
           <h2>Productos Destacados</h2>
           <p>Presentamos algunos de los productos mas elegidos por nuestros clientes. Diseñados y fabricados con dedicación y amor por lo que hacemos, nuestros muebles de pino demuestran nuestra forma de trabajar y entregar productos de la mejor calidad. </p>
-          <a href="https://www.muebles44.com/" className="cssbuttons-io-button">
+          <a href="https://www.muebles44.com.ar/" className="cssbuttons-io-button">
             Ver más
           <div className="icon">
             <svg
@@ -34,15 +34,15 @@ const Destacados = () => {
       <Carousel autoPlay infiniteLoop className='carusel'>
         <div>
           <img src={dest3} />
-          <a href="https://www.muebles44.com/varios/organizador-con-3-cajones-varios-colores-or003"><p className="legend">Organizador</p></a>
+          <a href="https://www.muebles44.com.ar/organizadores/organizador-con-3-cajones-varios-colores"><p className="legend">Organizador</p></a>
         </div>
         <div>
           <img src={dest2} />
-          <a href="https://www.muebles44.com/vestidores/vestidor-eco-con-estantes-y-perchero-vs001"><p className="legend">Vestidor</p></a>
+          <a href="https://www.muebles44.com.ar/organizadores/vestidores/vestidor-con-estantes-y-perchero"><p className="legend">Vestidor</p></a>
         </div>
         <div>
           <img src={dest1} />
-          <a href="https://www.muebles44.com/varios/bano/repisa-con-toallero-minimalista"><p className="legend">Toallero</p></a>
+          <a href="https://www.muebles44.com.ar/varios/bano/repisa-con-toallero-minimalista"><p className="legend">Toallero</p></a>
         </div>
       </Carousel>
     </div>
